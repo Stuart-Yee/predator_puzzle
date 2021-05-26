@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: bisque;
+}
+
+body {
+    background-color: rgb(2, 2, 59);
+    background-image: url(vision01.jpg);
+    background-size: cover;
+}
+
+#container {
+    margin: 20px auto;
+    width: fit-content;
+    border: 3px solid darkred;
+}
+
+.slot {
+    width:100%;
+}
+
+.slot img {
+    width: 320px;
+}
+
+.banner {
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+    height: auto;
+    display: block;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

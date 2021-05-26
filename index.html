@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".arnold").hide();
+            $(".slot img").click(function () {
+                var classes = $(this).attr("class");
+                var photoClass = "." + classes.slice(0, 6);
+                $(photoClass).show();
+                $(this).hide();
+            })
+
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="predator-logo.png" alt="Predator Logo" class="banner">
+    <h3 class="banner">"Get to the choppa!"</h3>
+
+    <div id="container">
+        <div class="slot">
+            <img src="predator-1.png" alt="Predator 1" class="photo1 predator">
+            <img src="arnold-1.png" alt="Arnold 1" class="photo1 arnold">
+        </div>
+        <div class="slot">
+            <img src="predator-2.png" alt="Predator 2" class="photo2 predator">
+            <img src="arnold-2.png" alt="Arnold 2" class="photo2 arnold">
+        </div>
+        <div class="slot">
+            <img src="predator-3.png" alt="Predator 3" class="photo3 predator">
+            <img src="arnold-3.png" alt="Arnold 3" class="photo3 arnold">
+        </div>
+        <div class="slot">
+            <img src="predator-4.png" alt="Predator 4" class="photo4 predator">
+            <img src="arnold-4.png" alt="Arnold 4" class="photo4 arnold">
+        </div>
+        <div class="slot">
+            <img src="predator-5.png" alt="Predator 5" class="photo5 predator">
+            <img src="arnold-5.png" alt="Arnold 5" class="photo5 arnold">
+        </div>
+    </div>
+</body>
+
+</html>
